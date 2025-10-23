@@ -98,6 +98,13 @@ body {
   font-weight: 700;
 
   margin-bottom: 30px;
+
+  transition: transform 0.2s linear;
+}
+
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 990px) {
@@ -118,5 +125,12 @@ body {
 @media screen and (max-width: 700px) {
   .card {
     margin: 0 10px;
+  }
+
+  .card:first-of-type {
+    border-radius: 10px 10px 0 0;
+  }
+  .card:nth-of-type(2) {
+    border-radius: 0;
   }
 }
